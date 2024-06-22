@@ -6,22 +6,18 @@ Repositório da API feita com Nest.js (Reserva de Ingressos)
 
 ## Rodar a aplicação
 
-Dentro da pasta `nest` execute o comando abaixo para rodar os containers `Docker`:
-```
-docker compose up
-```
-
-Quando os containers estiverem prontos, precisamos acessar o container do `app` e executar a aplicação:
+Abra o projeto usando VsCode DevContainers como definido em .devcontainer/devcontainer.json.
+Quando tudo estiver carregado, executar no terminal:
 
 ```
-// entrar no container:
-docker compose exec app bash
-
 // instalar as dependências:
 npm install
 
 // executar a migração do parceiro:
 npm run migrate
+
+//[opcional] Carregar o banco com dados de exemplo:
+npm run start:dev-fixture
 
 // Executar o partner na porta 3000
 npm run start:dev

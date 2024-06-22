@@ -7,7 +7,7 @@ import { AuthModule } from '../../../libs/core/src/auth/auth.module';
 
 @Module({
   imports: [
-    ConfigModule.forRoot({ envFilePath: '.env.partner1', isGlobal: true }),
+    ConfigModule.forRoot({ envFilePath: '.env', isGlobal: true }),
     PrismaModule,
     AuthModule,
     EventsModule,
